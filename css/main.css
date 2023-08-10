@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-   color: var(--secondarycolor);
+    color: var(--secondarycolor);
 
 }
 
@@ -67,6 +67,7 @@ textarea {
 
     text-align: center;
 }
+
 input[type="submit"]:hover {
     background-color: var(--primarycolor)
 }
@@ -87,10 +88,9 @@ footer {
 /*This code for skip link making invisible*/
 
 .visually-hidden-title {
-  @include visually-hidden;
+    @include visually-hidden;
 }
 
 .skip-navigation {
-  @include visually-hidden-focusable;
+    @include visually-hidden-focusable;
 }
-
