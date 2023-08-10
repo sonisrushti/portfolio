@@ -4,6 +4,8 @@ My Portfolio
 ### Challenging Parts while working with Portfolio
 ---
 Due to different image sizes, I first had a difficult time building a flexible portfolio website. But Bootstrap proved to be a game-changer. Its grid system organised my material with ease, and the 'img-fluid' class made sure that photos resized correctly across different screens. The ease of navigational elements improved user experience. Testing challenges arose when the design needed to be refined, however Bootstrap's customisation features allowed for a special touch. 
+
+
 ---
 
 
