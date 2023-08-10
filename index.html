@@ -27,11 +27,11 @@
 
 <body>
 
-    <header>
+    <header role="banner">
 
         <!--Navigation Bar-->
 
-        <nav class="navicustom navbar navbar-expand-lg bg-body-tertiary">
+        <nav role="navigation" class="navicustom navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid d-flex">
                 <a class="navbar-brand" href="index.html">
 
@@ -41,42 +41,42 @@
                         class="d-inline-block align-text-top">
                 </a>
                 <!-- Navigation bar -->
-                <button class="navbar-toggler shadow-none border-0 bg-white" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler shadow-none border-0 bg-white" type="button" data-bs-toggle="collapse" >
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active link-light" aria-current="page" href="index.html">Home</a>
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                        <li class="nav-item" itemprop="name">
+                            <a class="nav-link active link-light"  itemprop="url" aria-current="page" href="index.html">Home</a>
                         </li>
 
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown" itemprop="name">
                             <a class="nav-link dropdown-toggle link-light" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-expanded="false" itemprop="url">
                                 Portfolio
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="photography.html">Photography</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
+                            <ul class="dropdown-menu" role="menuitem" itemscope itemtype="http://www.schema.org/SiteNavigationElement"> 
+                                <li itemprop="name"><a class="dropdown-item" href="photography.html" itemprop="url">Photography</a></li>
+                                <li itemprop="name">
+                                    <hr class="dropdown-divider" role="menuitem">
                                 </li>
-                                <li><a class="dropdown-item" href="logo.html">Logos</a></li>
+                                <li itemprop="name"><a class="dropdown-item" href="logo.html" itemprop="url">Logos</a></li>
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <hr class="dropdown-divider" role="menuitem">
                                 </li>
-                                <li><a class="dropdown-item" href="illustration.html">Illustrations</a></li>
+                                <li itemprop="name"><a class="dropdown-item" href="illustration.html" itemprop="url">Illustrations</a></li>
 
 
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active link-light" aria-current="page" href="contact.html">Contact Us</a>
+                        <li class="nav-item" itemprop="name">
+                            <a class="nav-link active link-light" aria-current="page" href="contact.html" itemprop="url">Contact Us</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link active link-light" aria-current="page" href="about.html">About Us</a>
+                        <li class="nav-item" itemprop="name">
+                            <a class="nav-link active link-light" aria-current="page" href="about.html" itemprop="url">About Us</a>
                         </li>
 
                     </ul>
@@ -92,28 +92,28 @@
     <main class="container">
          <!-- Skip link -->
          <h2 class="visually-hidden">Title for screen readers</h2>
-         <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+         <a class="visually-hidden-focusable" href="#content" itemprop="url">Skip to main content</a>
          <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a></div>
  
 
         <!-- Website Tagline -->
-        <h1 class="m-5 heading">Designing Tomorrow's Brand Today</h1>
+        <h1 class="m-5 p-3 heading">Designing Tomorrow's Brand Today</h1>
 
 
         <!-- Card 1  -->
-        <div class="card border-0 row m-5 rounded-5" id="content">
+        <div role="region" class="card border-0 row m-5 rounded-5" id="content" >
             <div class="row g-0">
 
                 <!-- a link is given to the image & heading which will take to the photography page -->
 
-                <a class="link-light col-md-6" href="photography.html">
+                <a class="link-light col-md-6" href="photography.html" itemprop="url">
                     <img src="images/photography/photo4.jpg" class="card-img rounded-5 border-1"
                         alt="nature photography image">
                 </a>
 
                 <div class="col-md-6">
                     <div class="card-body">
-                        <a href="photography.html">
+                        <a href="photography.html" itemprop="url" class="text-decoration-none">
                             <h2 class="card-title">Photography</h2>
                         </a>
                         <p class="card-text">Head into the moments which we captured</p>
@@ -125,18 +125,18 @@
 
         <!-- Card 2  -->
 
-        <div class="card m-5 rounded-5 border-0">
+        <div role="region" class="card m-5 rounded-5 border-0">
             <div class="row g-0">
 
                 <!-- a link is given to the image & heading which will take to the logo page -->
 
-                <a class="link-dark col-md-6" href="logo.html">
+                <a class="link-dark col-md-6" href="logo.html" itemprop="url">
                     <img src="images/logos/logo2.jpg" class="card-img rounded-5 col-md-6 border-black"
-                        alt="sports logo image">
+                        alt="sports logo image" role="img">
                 </a>
                 <div class="col-md-6">
                     <div class="card-body">
-                        <a href="logo.html">
+                        <a href="logo.html" class="text-decoration-none">
                             <h2 class="card-title">Logos</h2>
                         </a>
                         <p class="card-text">With ease, we create your brand and make it more
@@ -150,16 +150,16 @@
 
 
         <!-- Card 3  -->
-        <div class="card m-5 rounded-5 border-0">
+        <div role="region" class="card m-5 rounded-5 border-0">
             <div class="row g-0">
                 <!-- a link is given to the image & heading which will take to the illustration page -->
-                <a class="link-dark col-md-6" href="illustration.html">
+                <a class="link-dark col-md-6" href="illustration.html" itemprop="url">
                     <img src="images/illustration/eyecar-01.jpg" class="card-img rounded-5 border-1"
-                        alt="illustration of a human eye image">
+                        alt="illustration of a human eye image" role="img">
                 </a>
                 <div class="col-md-6">
                     <div class="card-body">
-                        <a href="illustration.html">    
+                        <a href="illustration.html" itemprop="url" class="text-decoration-none">    
                             <h2 class="card-title">Illustration</h2>
                         </a>
                         <p class="card-text">We illustrate your stories innovatively that grab ones
@@ -176,28 +176,28 @@
     <!-- Main ends here -->
 
     <!-- Footer which contains social media links, all web pages links and copyrights-->
-    <footer class="footerstyle p-5">
+    <footer class="footerstyle p-5" role="contentinfo">
         <div class="row g-2">
             <div class="col social">
                 <h4 class="fs-6">Social Media Links</h4>
                 <div class="icons">
                     <a href="https://www.behance.net/srushtisoni_graphics"><i
                             class="fa-brands fa-square-behance link-light"></i></a>
-                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin link-light"></i></a>
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook link-light"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram link-light"></i></a>
-                    <a href="https://www.twitter.com/"><i class="fa-brands fa-square-twitter link-light"></i></a>
+                    <a href="https://www.linkedin.com/" itemprop="url"><i class="fa-brands fa-linkedin link-light"></i></a>
+                    <a href="https://www.facebook.com/" itemprop="url"><i class="fa-brands fa-square-facebook link-light"></i></a>
+                    <a href="https://www.instagram.com/" itemprop="url"><i class="fa-brands fa-square-instagram link-light"></i></a>
+                    <a href="https://www.twitter.com/" itemprop="url"><i class="fa-brands fa-square-twitter link-light"></i></a>
                 </div>
             </div>
             <div class="col navilinks1 d-flex flex-column flex-lg-row justify-content-lg-around">
-                <a class="link-light" href="index.html">Home</a>
-                <a class="link-light" href="about.html">About Us</a>
-                <a class="link-light" href="contact.html">Contact Us</a>
+                <a class="link-light" href="index.html" itemprop="url">Home</a>
+                <a class="link-light" href="about.html" itemprop="url">About Us</a>
+                <a class="link-light" href="contact.html" itemprop="url">Contact Us</a>
             </div>
             <div class="col navilinks2 d-flex flex-column flex-lg-row justify-content-lg-around">
-                <a class="link-light" href="illustration.html">Illustrations</a>
-                <a class="link-light" href="photography.html">Photography</a>
-                <a class="link-light" href="logo.html">Logos</a>
+                <a class="link-light" href="illustration.html" itemprop="url">Illustrations</a>
+                <a class="link-light" href="photography.html" itemprop="url">Photography</a>
+                <a class="link-light" href="logo.html" itemprop="url">Logos</a>
             </div>
         </div>
         <!-- copyrights -->

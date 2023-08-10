@@ -7,6 +7,10 @@ Due to different image sizes, I first had a difficult time building a flexible p
 ---
 
 
+[Google fonts](https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@400;700&family=Poppins:wght@200;500;600&display=swap)
+---
+
+
 [Bootstrap CDN](https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css)
 ---
 
