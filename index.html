@@ -4,11 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap CDN links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- fontawesome for social media links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@400;700&family=Poppins:wght@200;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS main file -->
+
     <link rel="stylesheet" href="css/main.css">
     <title>Portfolio</title>
 </head>
@@ -22,9 +34,13 @@
         <nav class="navicustom navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid d-flex">
                 <a class="navbar-brand" href="index.html">
+
+                    <!-- Website Logo -->
+
                     <img src="images/sm_logo.png" alt="Logo" width="300" height="90"
                         class="d-inline-block align-text-top">
                 </a>
+                <!-- Navigation bar -->
                 <button class="navbar-toggler shadow-none border-0 bg-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -70,42 +86,59 @@
         </nav>
 
 
-
-
-
-
-
     </header>
+    <!-- Navigation Ends -->
 
     <main class="container">
-        <h1 class="m-5">Designing Tomorrow's Brand Today</h1>
+         <!-- Skip link -->
+         <h2 class="visually-hidden">Title for screen readers</h2>
+         <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+         <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a></div>
+ 
+
+        <!-- Website Tagline -->
+        <h1 class="m-5 heading">Designing Tomorrow's Brand Today</h1>
 
 
-
-        <div class="card border-0 row m-5 rounded-5">
+        <!-- Card 1  -->
+        <div class="card border-0 row m-5 rounded-5" id="content">
             <div class="row g-0">
+
+                <!-- a link is given to the image & heading which will take to the photography page -->
+
                 <a class="link-light col-md-6" href="photography.html">
-                    <img src="images/photography/photo4.jpg" class="card-img rounded-5 border-1" alt="...">
+                    <img src="images/photography/photo4.jpg" class="card-img rounded-5 border-1"
+                        alt="nature photography image">
                 </a>
-              
+
                 <div class="col-md-6">
                     <div class="card-body">
-                        <h2 class="card-title">Photography</h2>
+                        <a href="photography.html">
+                            <h2 class="card-title">Photography</h2>
+                        </a>
                         <p class="card-text">Head into the moments which we captured</p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Card 1 Ends -->
+
+        <!-- Card 2  -->
 
         <div class="card m-5 rounded-5 border-0">
             <div class="row g-0">
+
+                <!-- a link is given to the image & heading which will take to the logo page -->
+
                 <a class="link-dark col-md-6" href="logo.html">
-                    <img src="images/logos/logo2.jpg" class="card-img rounded-5 col-md-6 border-black" alt="...">
+                    <img src="images/logos/logo2.jpg" class="card-img rounded-5 col-md-6 border-black"
+                        alt="sports logo image">
                 </a>
                 <div class="col-md-6">
                     <div class="card-body">
-
-                        <h2 class="card-title">Logos</h2>
+                        <a href="logo.html">
+                            <h2 class="card-title">Logos</h2>
+                        </a>
                         <p class="card-text">With ease, we create your brand and make it more
                             visually attractive to people.
                         </p>
@@ -113,61 +146,67 @@
                 </div>
             </div>
         </div>
+        <!-- Card 2 Ends -->
 
+
+        <!-- Card 3  -->
         <div class="card m-5 rounded-5 border-0">
             <div class="row g-0">
+                <!-- a link is given to the image & heading which will take to the illustration page -->
                 <a class="link-dark col-md-6" href="illustration.html">
-                    <img src="images/illustration/eyecar-01.jpg" class="card-img rounded-5 border-1" alt="...">
+                    <img src="images/illustration/eyecar-01.jpg" class="card-img rounded-5 border-1"
+                        alt="illustration of a human eye image">
                 </a>
                 <div class="col-md-6">
                     <div class="card-body">
-                        <h2 class="card-title">Illustration</h2>
+                        <a href="illustration.html">    
+                            <h2 class="card-title">Illustration</h2>
+                        </a>
                         <p class="card-text">We illustrate your stories innovatively that grab ones
                             attention.
                     </div>
-                    </p>
+
                 </div>
             </div>
         </div>
+        <!-- Card 1 Ends -->
 
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-sm-1 col-md-1 col-lg-2">Content 1</div>
-
-
-                <div class="col-sm-1 col-md-1 col-lg-2">Content 2</div>
-
-
-                <div class="col-sm-1 col-md-1 col-lg-2">Content 3</div>
-            </div>
-        </div> -->
     </main>
+
+    <!-- Main ends here -->
+
+    <!-- Footer which contains social media links, all web pages links and copyrights-->
     <footer class="footerstyle p-5">
         <div class="row g-2">
             <div class="col social">
                 <h4 class="fs-6">Social Media Links</h4>
                 <div class="icons">
-                    <a href="#"><i class="fa-brands fa-square-behance link-light"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin link-light"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-facebook link-light"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-instagram link-light"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-twitter link-light"></i></a>
+                    <a href="https://www.behance.net/srushtisoni_graphics"><i
+                            class="fa-brands fa-square-behance link-light"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin link-light"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook link-light"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram link-light"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fa-brands fa-square-twitter link-light"></i></a>
                 </div>
             </div>
             <div class="col navilinks1 d-flex flex-column flex-lg-row justify-content-lg-around">
-                <a class="link-light" href="#">Home</a>
-                <a class="link-light" href="#">About Us</a>
-                <a class="link-light" href="#">Contact Us</a>
+                <a class="link-light" href="index.html">Home</a>
+                <a class="link-light" href="about.html">About Us</a>
+                <a class="link-light" href="contact.html">Contact Us</a>
             </div>
             <div class="col navilinks2 d-flex flex-column flex-lg-row justify-content-lg-around">
-                <a class="link-light" href="#">Illustrations</a>
-                <a class="link-light" href="#">Photography</a>
-                <a class="link-light" href="#">Logos</a>
+                <a class="link-light" href="illustration.html">Illustrations</a>
+                <a class="link-light" href="photography.html">Photography</a>
+                <a class="link-light" href="logo.html">Logos</a>
             </div>
         </div>
+        <!-- copyrights -->
         <div class="copyrights text-center mt-3">
             Copyright &copy; 2023 All rights reserved. | Powered by Sketchyymind. </div>
     </footer>
+    <!-- footer ends -->
+
+    <!-- javascript link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>

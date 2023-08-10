@@ -1,51 +1,90 @@
-/* form {
-    border: 2px solid #ccc;
-    padding: 20px;
-    width: 51%;
-    align-self: center;
-    margin: 0 auto; 
-}*/
+/***************************************************
+these colors are used for navbar, footer and button
+****************************************************/
+:root {
+    --primarycolor: #3297CF;
+    --secondarycolor: #EE5350;
+}
 
+/***********************************
+Fonts which are used on the website
+************************************/
+/*
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--secondarycolor);
+}
+
+h2,
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/************************
+Styling for contact form
+*************************/
 
 label {
-    
+
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
 }
+
 input,
 textarea {
-    width: 50%;
+    width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
+    border-radius: 20px;
     margin: 0 auto;
-    
+    justify-content: center;
+
 }
+
 textarea {
     resize: none;
 }
-.send{
-    background-color: #007bff;
+
+
+/*Styling send button*/
+.send {
+    background-color: var(--primarycolor);
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     width: 6.6em;
-    
+
     text-align: center;
 }
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: var(--primarycolor)
 }
 
 /* Footer style */
 
 footer {
-    background-color: #EE5350;
+    background-color: var(--secondarycolor);
     color: white !important;
 }
 
 .navicustom {
-    background-color: #3297CF !important;
+    background-color: var(--primarycolor) !important;
     color: white;
+}
+
+
+/*This code for skip link making invisible*/
+
+.visually-hidden-title {
+  @include visually-hidden;
+}
+
+.skip-navigation {
+  @include visually-hidden-focusable;
 }
